@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="119.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.multimedia.ShareController">
+    <children>
+        <Label alignment="CENTER" layoutX="97.0" layoutY="20.0" prefHeight="26.0" prefWidth="194.0" text="Share To Telegram" textAlignment="CENTER" />
+        <Button fx:id="imageButton" layoutX="21.0" layoutY="61.0" mnemonicParsing="false" onAction="#onActionImageButton" prefHeight="38.0" prefWidth="81.0" text="image" />
+        <Button fx:id="audioButton" layoutX="111.0" layoutY="61.0" mnemonicParsing="false" onAction="#onActionAudioButton" prefHeight="38.0" prefWidth="82.0" text="audio" />
+        <Button fx:id="pdfButton" layoutX="202.0" layoutY="61.0" mnemonicParsing="false" onAction="#onActionPdfButton" prefHeight="38.0" prefWidth="82.0" text="pdf" />
+        <Button fx:id="zipButton" layoutX="291.0" layoutY="61.0" mnemonicParsing="false" onAction="#onActionZipButton" prefHeight="38.0" prefWidth="82.0" text="zip" />
+    </children>
+</AnchorPane>

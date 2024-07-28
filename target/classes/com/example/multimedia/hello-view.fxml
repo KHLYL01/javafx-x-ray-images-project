@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="980.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.multimedia.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <Pane prefHeight="694.0" prefWidth="938.0">
+            <children>
+                <ImageView fx:id="imageView1" fitHeight="400" fitWidth="300" onMouseClicked="#onMouseClickedImageView1"
+                           onMouseDragged="#onMouseDraggedImageView1" onMousePressed="#onMousePressedImageView1"
+                           onMouseReleased="#onMouseReleasedImageView1" smooth="true"/>
+                <Rectangle fx:id="rectangle" fill="#ffffff00" height="35.0" stroke="BLACK" strokeWidth="2.0"
+                           visible="false" width="39.0"/>
+                <!--                preserveRatio="true"-->
+                <Label fx:id="label1" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT"
+                       onDragDropped="#onDragDroppedLabel1" onDragOver="#onDragOverLabel"
+                       onMouseClicked="#onMouseClickedLabel1" prefHeight="400.0" prefWidth="300.0"
+                       style="-fx-background-color: lightgrey" text="Drop image to here or click here"
+                       textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" blue="0.9833333492279053"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.007680491551459294">
+                                    <color>
+                                        <Color red="1.0" blue="0.9833333492279053"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.9969278033794164">
+                                    <color>
+                                        <Color green="0.6666666865348816" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color green="0.6666666865348816" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <Button fx:id="button8" layoutX="-1.0" layoutY="483.0" mnemonicParsing="false"
+                        onAction="#onActionButton8" prefHeight="35.0" prefWidth="97.0" text="color image"
+                        visible="false"/>
+                <Button fx:id="button1" layoutX="-1.0" layoutY="526.0" mnemonicParsing="false"
+                        onAction="#onActionButton1" prefHeight="35.0" prefWidth="97.0" text="Reset Image"
+                        visible="false"/>
+                <Button fx:id="button7" layoutX="100.0" layoutY="483.0" mnemonicParsing="false"
+                        onAction="#onActionButton7" prefHeight="35.0" prefWidth="97.0" text="cut image"
+                        visible="false"/>
+                <Button fx:id="button9" layoutX="100.0" layoutY="526.0" mnemonicParsing="false"
+                        onAction="#onActionButton9" prefHeight="35.0" prefWidth="97.0" text="raising quality"
+                        visible="false"/>
+                <ComboBox fx:id="stringComboBox" layoutX="1.0" layoutY="408.0" onAction="#onActionComboBox"
+                          prefWidth="150.0" promptText="colors 1" visible="false"/>
+                <ComboBox fx:id="sizeComboBox" layoutX="224.0" layoutY="408.0" onAction="#onActionSizeComboBox"
+                          prefHeight="25.0" prefWidth="75.0" promptText="32" visible="false"/>
+                <Label fx:id="sizeLabel" layoutX="166.0" layoutY="408.0" prefHeight="25.0" prefWidth="60.0"
+                       text="box size" visible="false"/>
+                <ImageView fx:id="imageView2" fitHeight="400" fitWidth="300" layoutX="319.0" smooth="true"/>
+                <Label fx:id="label2" alignment="CENTER" layoutX="319.0" nodeOrientation="LEFT_TO_RIGHT"
+                       onDragDropped="#onDragDroppedLabel2" onDragOver="#onDragOverLabel"
+                       onMouseClicked="#onMouseClickedLabel2" prefHeight="400.0" prefWidth="300.0"
+                       style="-fx-background-color: lightgrey" text="Drop image to here or click here"
+                       textAlignment="CENTER" visible="false" wrapText="true">
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" blue="0.9833333492279053"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.007680491551459294">
+                                    <color>
+                                        <Color red="1.0" blue="0.9833333492279053"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.9969278033794164">
+                                    <color>
+                                        <Color green="0.6666666865348816" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color green="0.6666666865348816" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <Button fx:id="button3" layoutX="319.0" layoutY="408.0" mnemonicParsing="false"
+                        onAction="#onActionButton3" prefHeight="35.0" prefWidth="97.0" text="result" visible="false"/>
+                <TextField fx:id="text1" alignment="CENTER" layoutX="426.0" layoutY="413.0" prefHeight="25.0"
+                           prefWidth="193.0" visible="false"/>
+                <Button fx:id="button4" layoutX="-1.0" layoutY="443.0" mnemonicParsing="false"
+                        onAction="#onActionButton4" prefHeight="35.0" prefWidth="97.0" text="resulte" visible="false"/>
+                <TextField fx:id="text2" alignment="CENTER" layoutX="104.0" layoutY="448.0" prefHeight="25.0"
+                           prefWidth="193.0" visible="false"/>
+                <TextField fx:id="text3" alignment="CENTER" disable="true" layoutX="745.0" layoutY="5.0"
+                           prefHeight="25.0" prefWidth="193.0"/>
+                <Button fx:id="button5" layoutX="634.0" mnemonicParsing="false" onAction="#onActionButton5"
+                        prefHeight="35.0" prefWidth="97.0" text="add path"/>
+                <TextField fx:id="text4" alignment="CENTER" layoutX="745.0" layoutY="49.0" prefHeight="25.0"
+                           prefWidth="193.0"/>
+                <Button fx:id="button6" layoutX="634.0" layoutY="44.0" mnemonicParsing="false"
+                        onAction="#onActionButton6" prefHeight="35.0" prefWidth="97.0" text="search"/>
+                <TableView fx:id="tableView" layoutX="634.0" layoutY="98.0" prefHeight="302.0" prefWidth="306.0">
+                    <columns>
+                        <TableColumn fx:id="columnName" editable="false" prefWidth="109.79998779296875" text="Name"/>
+                        <TableColumn fx:id="columnSize" editable="false" prefWidth="84.800048828125" text="Size"/>
+                        <TableColumn fx:id="columnLastModified" editable="false" prefWidth="112.79998779296875"
+                                     text="Last Modified"/>
+                    </columns>
+                </TableView>
+                <Polyline fx:id="polyline" fill="#80ff0000" layoutX="65.0" layoutY="51.0" strokeWidth="3.0"
+                          visible="false">
+                    <points>
+                        <Double fx:value="-50.0"/>
+                        <Double fx:value="-40.0"/>
+                        <Double fx:value="50.0"/>
+                        <Double fx:value="-40.0"/>
+                        <Double fx:value="0.0"/>
+                        <Double fx:value="60.0"/>
+                        <Double fx:value="-50.0"/>
+                        <Double fx:value="-40.0"/>
+                    </points>
+                </Polyline>
+                <Button fx:id="button2" layoutX="201.0" layoutY="526.0" mnemonicParsing="false"
+                        onAction="#onActionButton2" prefHeight="35.0" prefWidth="97.0" text="Save image"
+                        visible="false"/>
+                <Button fx:id="button10" layoutX="634.0" layoutY="408.0" mnemonicParsing="false"
+                        onAction="#onActionButton10" prefHeight="61.0" prefWidth="306.0" text="add report"
+                        visible="false"/>
+            </children>
+        </Pane>
+    </children>
+</VBox>
